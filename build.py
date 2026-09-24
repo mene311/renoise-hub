@@ -165,7 +165,7 @@ def render(data: dict, facts: dict) -> str:
             if repo in data["repos"]
         )
         sections.append(
-            f"""  <section class="panel">
+            f"""  <section class="panel" id="{section['id']}">
     <div class="panel-head">
       <h2>{esc(section['title'])}</h2>
       <span class="hint">{esc(section['blurb'])}</span>

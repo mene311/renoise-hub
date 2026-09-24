@@ -294,3 +294,6 @@ footer {
 }
 .links { display: flex; flex-wrap: wrap; gap: 12px; }
 .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+
+/* jump links must clear the sticky header */
+section[id] { scroll-margin-top: calc(var(--header-height) + 10px); }
