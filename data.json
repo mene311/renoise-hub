@@ -45,7 +45,7 @@
   "repos": {
     "renoise-wavetable-instruments": {
       "name": "Wavetable instrument library",
-      "blurb": "2,373 gate-scan instruments filed by timbre, built from CC0 wavetables. One sample slot per frame, one gate LFO per slot, and a WT Position macro that walks the table while a note holds.",
+      "blurb": "2,346 gate-scan instruments filed by timbre, built from CC0 wavetables. One sample slot per frame, one gate LFO per slot, and a WT Position macro that walks the table while a note holds.",
       "tags": [
         "xrni",
         "wavetables",
