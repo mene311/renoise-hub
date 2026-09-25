@@ -139,7 +139,11 @@ def card(repo: str, entry: dict, facts: dict) -> str:
     site = entry.get("links", {}).get("site")
     if site and facts.get("_sites", {}).get(site, True):
         links.append(("open", site))
-    for key, label in (("tool", "Renoise tool"), ("zip", "download .zip")):
+    # "download .zip" suits the instrument libraries, whose links.zip is a tarball of the
+    # whole collection. A single tool instead points at a release page holding an
+    # installable .xrnx, which should not claim to be a zip, so an entry can relabel it.
+    labels = entry.get("link_labels", {})
+    for key, label in (("tool", "Renoise tool"), ("zip", labels.get("zip", "download .zip"))):
         if entry.get("links", {}).get(key):
             links.append((label, entry["links"][key]))
     links.append(("source", entry["links"]["repo"]))

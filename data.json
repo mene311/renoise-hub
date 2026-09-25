@@ -243,9 +243,12 @@
      "label": "lua sources"
     }
    ],
+   "link_labels": {
+    "zip": "get the .xrnx"
+   },
    "links": {
     "tool": "https://github.com/mene311/renoise-phrasetopattern",
-    "zip": "https://github.com/mene311/renoise-phrasetopattern/archive/refs/heads/master.zip",
+    "zip": "https://github.com/mene311/renoise-phrasetopattern/releases/latest",
     "repo": "https://github.com/mene311/renoise-phrasetopattern"
    }
   },
@@ -265,9 +268,12 @@
      "label": "lua sources"
     }
    ],
+   "link_labels": {
+    "zip": "get the .xrnx"
+   },
    "links": {
     "tool": "https://github.com/mene311/renoise-ytsampler",
-    "zip": "https://github.com/mene311/renoise-ytsampler/archive/refs/heads/master.zip",
+    "zip": "https://github.com/mene311/renoise-ytsampler/releases/latest",
     "repo": "https://github.com/mene311/renoise-ytsampler"
    }
   },
@@ -287,9 +293,12 @@
      "label": "lua sources"
     }
    ],
+   "link_labels": {
+    "zip": "get the .xrnx"
+   },
    "links": {
     "tool": "https://github.com/mene311/renoise-chat",
-    "zip": "https://github.com/mene311/renoise-chat/archive/refs/heads/master.zip",
+    "zip": "https://github.com/mene311/renoise-chat/releases/latest",
     "repo": "https://github.com/mene311/renoise-chat"
    }
   }
