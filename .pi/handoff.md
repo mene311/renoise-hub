@@ -40,3 +40,9 @@ width, all four nav anchors resolve, and all 19 links on the deployed page retur
 - Published 133 LFO presets + 133 modulation sets into `renoise-wavetable-tools/presets/`.
 - Fixed the stale description and added topics on six repos; cross-linked the hub from the
   tools pages, tools README and instruments README.
+
+## 2026-09-25 — the theme is now shared
+
+`style.css` here is the source of truth for the tracker chrome. `renoise-forum-color-themes` carries
+a copy of it (its header comment says so) plus a `gallery.css` that only uses these tokens, so the
+two sites look like one family. If this stylesheet is restyled, copy it over there too.
