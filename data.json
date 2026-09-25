@@ -1,231 +1,245 @@
 {
-  "hero": {
-    "heading": "Everything I've built for <em>Renoise</em>",
-    "lede": "Instruments, colour themes and the tooling behind them. All of it is Renoise-native: the sampler, the LFOs and the macros already in the box, no plugins to install. The counts and dates below are pulled from GitHub when the page is built."
+ "hero": {
+  "heading": "Everything I've built for <em>Renoise</em>",
+  "lede": "Instruments, colour themes and the tooling behind them. All of it is Renoise-native: the sampler, the LFOs and the macros already in the box, no plugins to install. The counts and dates below are pulled from GitHub when the page is built."
+ },
+ "sections": [
+  {
+   "id": "sound",
+   "title": "Sound",
+   "blurb": "Instrument libraries that go straight into User Library/Instruments/, plus the LFO shapes behind them.",
+   "items": [
+    "renoise-wavetable-instruments",
+    "renoise-trove",
+    "lfo-shapes"
+   ]
   },
-  "sections": [
-    {
-      "id": "sound",
-      "title": "Sound",
-      "blurb": "Instrument libraries that go straight into User Library/Instruments/, plus the LFO shapes behind them.",
-      "items": [
-        "renoise-wavetable-instruments",
-        "renoise-trove",
-        "lfo-shapes"
-      ]
-    },
-    {
-      "id": "tools",
-      "title": "Tools",
-      "blurb": "The machines that make the libraries, usable from a browser, a terminal, or inside Renoise.",
-      "items": [
-        "renoise-wavetable-tools"
-      ]
-    },
-    {
-      "id": "themes",
-      "title": "Themes",
-      "blurb": "Colour themes for the tracker, live previews, and the notes on what makes one work.",
-      "items": [
-        "renoise-forum-color-themes",
-        "renoise-theme-collection",
-        "renoise-theme-design-principles",
-        "renoise-themes"
-      ]
-    },
-    {
-      "id": "archives",
-      "title": "Archives",
-      "blurb": "Things that existed in chat or on forums and would otherwise be gone.",
-      "items": [
-        "renoise-community-archive"
-      ]
-    }
-  ],
-  "repos": {
-    "renoise-wavetable-instruments": {
-      "name": "Wavetable instrument library",
-      "blurb": "2,339 gate-scan instruments filed by timbre, built from CC0 wavetables. One sample slot per frame, one gate LFO per slot, and a WT Position macro that walks the table while a note holds.",
-      "tags": [
-        "xrni",
-        "wavetables",
-        "cc0"
-      ],
-      "facts": [
-        {
-          "type": "tree_count",
-          "ext": ".xrni",
-          "label": "instruments"
-        }
-      ],
-      "links": {
-        "site": "https://mene311.github.io/renoise-wavetable-tools/library.html",
-        "repo": "https://github.com/mene311/renoise-wavetable-instruments",
-        "zip": "https://github.com/mene311/renoise-wavetable-instruments/archive/refs/heads/master.zip"
-      }
-    },
-    "renoise-trove": {
-      "name": "Renoise Trove",
-      "blurb": "A vault of native instruments and phrases under CC0, gathered so they stop being scattered across forum posts and chats.",
-      "tags": [
-        "xrni",
-        "xrnz",
-        "cc0"
-      ],
-      "facts": [
-        {
-          "type": "tree_count",
-          "ext": ".xrni",
-          "label": "instruments"
-        },
-        {
-          "type": "tree_count",
-          "ext": ".xrnz",
-          "label": "phrases"
-        },
-        {
-          "type": "tree_count",
-          "ext": ".flac",
-          "label": "samples"
-        }
-      ],
-      "links": {
-        "repo": "https://github.com/mene311/renoise-trove",
-        "zip": "https://github.com/mene311/renoise-trove/archive/refs/heads/main.zip"
-      }
-    },
-    "renoise-wavetable-tools": {
-      "name": "Wavetable builder",
-      "blurb": "Turns wavetables into gate-scan instruments three ways: a browser page that runs the whole conversion client-side, a Python CLI for whole collections, and a Lua tool that builds from samples already inside your song. The XML it writes is validated against the schema Renoise ships.",
-      "tags": [
-        "python",
-        "lua",
-        "browser",
-        "verified"
-      ],
-      "facts": [],
-      "links": {
-        "site": "https://mene311.github.io/renoise-wavetable-tools/",
-        "repo": "https://github.com/mene311/renoise-wavetable-tools",
-        "tool": "https://github.com/mene311/renoise-wavetable-tools/tree/master/renoise-tool"
-      }
-    },
-    "renoise-forum-color-themes": {
-      "name": "Forum colour theme archive",
-      "blurb": "Every theme posted in the Color Themes For Renoise thread from 2006 onward, with a gallery that previews each one against real tracker screenshots, a catalog, and a shell installer for the whole set.",
-      "tags": [
-        "xrnc",
-        "gallery",
-        "2006-2026"
-      ],
-      "facts": [
-        {
-          "type": "tree_count",
-          "ext": ".xrnc",
-          "label": "themes"
-        }
-      ],
-      "links": {
-        "site": "https://mene311.github.io/renoise-forum-color-themes/",
-        "repo": "https://github.com/mene311/renoise-forum-color-themes",
-        "zip": "https://github.com/mene311/renoise-forum-color-themes/archive/refs/heads/master.zip"
-      }
-    },
-    "renoise-theme-collection": {
-      "name": "My own theme collection",
-      "blurb": "The themes I use and maintain myself, ported from the palettes I liked elsewhere: Everforest, Gruvbox and friends, plus some originals.",
-      "tags": [
-        "xrnc",
-        "ports"
-      ],
-      "facts": [
-        {
-          "type": "tree_count",
-          "ext": ".xrnc",
-          "label": "themes"
-        }
-      ],
-      "links": {
-        "repo": "https://github.com/mene311/renoise-theme-collection"
-      }
-    },
-    "renoise-theme-design-principles": {
-      "name": "Theme design principles",
-      "blurb": "Notes on what a tracker theme has to get right \u2014 contrast between pattern data and chrome, keeping hue noise out of the pattern area, and why some palettes are unreadable at 3 a.m.",
-      "tags": [
-        "writing",
-        "design"
-      ],
-      "facts": [],
-      "links": {
-        "repo": "https://github.com/mene311/renoise-theme-design-principles"
-      }
-    },
-    "renoise-themes": {
-      "name": "Theme platform",
-      "blurb": "The web app behind renoisethemes.com: upload an .xrnc and it generates a palette, applies the theme to live tracker screenshots, and tags it by mood and colour family. The domain is parked while I decide what happens to it.",
-      "tags": [
-        "web app",
-        "source",
-        "paused"
-      ],
-      "facts": [],
-      "links": {
-        "repo": "https://github.com/mene311/renoise-themes",
-        "site": "https://renoisethemes.com/"
-      }
-    },
-    "renoise-community-archive": {
-      "name": "Community server archive",
-      "blurb": "Renoise-native files shared in the community Discord, pulled out before the attachment links expired: tools, instruments, songs and device chains, with the full attachment index. Read from 64,172 messages across 25 channels.",
-      "tags": [
-        "discord",
-        "preservation",
-        "2026"
-      ],
-      "facts": [
-        {
-          "type": "tree_count",
-          "ext": ".xrnx",
-          "label": "lua tools"
-        },
-        {
-          "type": "tree_count",
-          "ext": ".xrni",
-          "label": "instruments"
-        },
-        {
-          "type": "tree_count",
-          "ext": ".xrns",
-          "label": "songs"
-        }
-      ],
-      "links": {
-        "repo": "https://github.com/mene311/renoise-community-archive"
-      }
-    },
-    "lfo-shapes": {
-      "name": "LFO shapes and modulation sets",
-      "external": true,
-      "blurb": "133 LFO shape presets and 133 sampler modulation sets, pulled out of Vital's LFO tables and rebuilt as Renoise-native files. They sit in the wavetable builder repository, ready to copy into your user library.",
-      "tags": [
-        "xrdp",
-        "xrno",
-        "lfo"
-      ],
-      "static": [
-        "266 files",
-        "133 LFO presets",
-        "133 modulation sets"
-      ],
-      "facts": [],
-      "links": {
-        "repo": "https://github.com/mene311/renoise-wavetable-tools/tree/master/presets",
-        "zip": "https://github.com/mene311/renoise-wavetable-tools/archive/refs/heads/master.zip"
-      }
-    }
+  {
+   "id": "tools",
+   "title": "Tools",
+   "blurb": "The machines that make the libraries, usable from a browser, a terminal, or inside Renoise.",
+   "items": [
+    "renoise-wavetable-tools",
+    "renoise-tools"
+   ]
   },
-  "footer": {
-    "line": "Built and measured from the machine that made the files. Page generated by build.py from data.json plus live repository facts."
+  {
+   "id": "themes",
+   "title": "Themes",
+   "blurb": "Colour themes for the tracker, live previews, and the notes on what makes one work.",
+   "items": [
+    "renoise-forum-color-themes",
+    "renoise-theme-collection",
+    "renoise-theme-design-principles",
+    "renoise-themes"
+   ]
+  },
+  {
+   "id": "archives",
+   "title": "Archives",
+   "blurb": "Things that existed in chat or on forums and would otherwise be gone.",
+   "items": [
+    "renoise-community-archive"
+   ]
   }
+ ],
+ "repos": {
+  "renoise-wavetable-instruments": {
+   "name": "Wavetable instrument library",
+   "blurb": "2,339 gate-scan instruments filed by timbre, built from CC0 wavetables. One sample slot per frame, one gate LFO per slot, and a WT Position macro that walks the table while a note holds.",
+   "tags": [
+    "xrni",
+    "wavetables",
+    "cc0"
+   ],
+   "facts": [
+    {
+     "type": "tree_count",
+     "ext": ".xrni",
+     "label": "instruments"
+    }
+   ],
+   "links": {
+    "site": "https://mene311.github.io/renoise-wavetable-tools/library.html",
+    "repo": "https://github.com/mene311/renoise-wavetable-instruments",
+    "zip": "https://github.com/mene311/renoise-wavetable-instruments/archive/refs/heads/master.zip"
+   }
+  },
+  "renoise-trove": {
+   "name": "Renoise Trove",
+   "blurb": "A vault of native instruments and phrases under CC0, gathered so they stop being scattered across forum posts and chats.",
+   "tags": [
+    "xrni",
+    "xrnz",
+    "cc0"
+   ],
+   "facts": [
+    {
+     "type": "tree_count",
+     "ext": ".xrni",
+     "label": "instruments"
+    },
+    {
+     "type": "tree_count",
+     "ext": ".xrnz",
+     "label": "phrases"
+    },
+    {
+     "type": "tree_count",
+     "ext": ".flac",
+     "label": "samples"
+    }
+   ],
+   "links": {
+    "repo": "https://github.com/mene311/renoise-trove",
+    "zip": "https://github.com/mene311/renoise-trove/archive/refs/heads/main.zip"
+   }
+  },
+  "renoise-wavetable-tools": {
+   "name": "Wavetable builder",
+   "blurb": "Turns wavetables into gate-scan instruments three ways: a browser page that runs the whole conversion client-side, a Python CLI for whole collections, and a Lua tool that builds from samples already inside your song. The XML it writes is validated against the schema Renoise ships.",
+   "tags": [
+    "python",
+    "lua",
+    "browser",
+    "verified"
+   ],
+   "facts": [],
+   "links": {
+    "site": "https://mene311.github.io/renoise-wavetable-tools/",
+    "repo": "https://github.com/mene311/renoise-wavetable-tools",
+    "tool": "https://github.com/mene311/renoise-wavetable-tools/tree/master/renoise-tool"
+   }
+  },
+  "renoise-forum-color-themes": {
+   "name": "Forum colour theme archive",
+   "blurb": "Every theme posted in the Color Themes For Renoise thread from 2006 onward, with a gallery that previews each one against real tracker screenshots, a catalog, and a shell installer for the whole set.",
+   "tags": [
+    "xrnc",
+    "gallery",
+    "2006-2026"
+   ],
+   "facts": [
+    {
+     "type": "tree_count",
+     "ext": ".xrnc",
+     "label": "themes"
+    }
+   ],
+   "links": {
+    "site": "https://mene311.github.io/renoise-forum-color-themes/",
+    "repo": "https://github.com/mene311/renoise-forum-color-themes",
+    "zip": "https://github.com/mene311/renoise-forum-color-themes/archive/refs/heads/master.zip"
+   }
+  },
+  "renoise-theme-collection": {
+   "name": "My own theme collection",
+   "blurb": "The themes I use and maintain myself, ported from the palettes I liked elsewhere: Everforest, Gruvbox and friends, plus some originals.",
+   "tags": [
+    "xrnc",
+    "ports"
+   ],
+   "facts": [
+    {
+     "type": "tree_count",
+     "ext": ".xrnc",
+     "label": "themes"
+    }
+   ],
+   "links": {
+    "repo": "https://github.com/mene311/renoise-theme-collection"
+   }
+  },
+  "renoise-theme-design-principles": {
+   "name": "Theme design principles",
+   "blurb": "Notes on what a tracker theme has to get right \u2014 contrast between pattern data and chrome, keeping hue noise out of the pattern area, and why some palettes are unreadable at 3 a.m.",
+   "tags": [
+    "writing",
+    "design"
+   ],
+   "facts": [],
+   "links": {
+    "repo": "https://github.com/mene311/renoise-theme-design-principles"
+   }
+  },
+  "renoise-themes": {
+   "name": "Theme platform",
+   "blurb": "The web app behind renoisethemes.com: upload an .xrnc and it generates a palette, applies the theme to live tracker screenshots, and tags it by mood and colour family. The domain is parked while I decide what happens to it.",
+   "tags": [
+    "web app",
+    "source",
+    "paused"
+   ],
+   "facts": [],
+   "links": {
+    "repo": "https://github.com/mene311/renoise-themes",
+    "site": "https://renoisethemes.com/"
+   }
+  },
+  "renoise-community-archive": {
+   "name": "Community server archive",
+   "blurb": "Renoise-native files shared in the community Discord, pulled out before the attachment links expired: tools, instruments, songs and device chains, with the full attachment index. Read from 64,172 messages across 25 channels.",
+   "tags": [
+    "discord",
+    "preservation",
+    "2026"
+   ],
+   "facts": [
+    {
+     "type": "tree_count",
+     "ext": ".xrnx",
+     "label": "lua tools"
+    },
+    {
+     "type": "tree_count",
+     "ext": ".xrni",
+     "label": "instruments"
+    },
+    {
+     "type": "tree_count",
+     "ext": ".xrns",
+     "label": "songs"
+    }
+   ],
+   "links": {
+    "repo": "https://github.com/mene311/renoise-community-archive"
+   }
+  },
+  "lfo-shapes": {
+   "name": "LFO shapes and modulation sets",
+   "external": true,
+   "blurb": "133 LFO shape presets and 133 sampler modulation sets, pulled out of Vital's LFO tables and rebuilt as Renoise-native files. They sit in the wavetable builder repository, ready to copy into your user library.",
+   "tags": [
+    "xrdp",
+    "xrno",
+    "lfo"
+   ],
+   "static": [
+    "266 files",
+    "133 LFO presets",
+    "133 modulation sets"
+   ],
+   "facts": [],
+   "links": {
+    "repo": "https://github.com/mene311/renoise-wavetable-tools/tree/master/presets",
+    "zip": "https://github.com/mene311/renoise-wavetable-tools/archive/refs/heads/master.zip"
+   }
+  },
+  "renoise-tools": {
+   "name": "Renoise tools",
+   "blurb": "Three tools that live in Renoise rather than beside it: render the phrases triggered in a pattern into editable note data, pull a YouTube URL straight into the Sample Editor, and drive the song from a chat box. Each one installs as a .xrnx.",
+   "tags": [
+    "lua",
+    "xrnx",
+    "tools"
+   ],
+   "facts": [],
+   "links": {
+    "repo": "https://github.com/mene311/renoise-tools"
+   }
+  }
+ },
+ "footer": {
+  "line": "Built and measured from the machine that made the files. Page generated by build.py from data.json plus live repository facts."
+ }
 }
