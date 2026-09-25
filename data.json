@@ -20,7 +20,9 @@
    "blurb": "The machines that make the libraries, usable from a browser, a terminal, or inside Renoise.",
    "items": [
     "renoise-wavetable-tools",
-    "renoise-tools"
+    "renoise-phrasetopattern",
+    "renoise-ytsampler",
+    "renoise-chat"
    ]
   },
   {
@@ -225,17 +227,70 @@
     "zip": "https://github.com/mene311/renoise-wavetable-tools/archive/refs/heads/master.zip"
    }
   },
-  "renoise-tools": {
-   "name": "Renoise tools",
-   "blurb": "Three tools that live in Renoise rather than beside it: render the phrases triggered in a pattern into editable note data, pull a YouTube URL straight into the Sample Editor, and drive the song from a chat box. Each one installs as a .xrnx.",
+  "renoise-phrasetopattern": {
+   "name": "Phrase To Pattern",
+   "blurb": "Renders the phrases triggered in a pattern into real, editable note data. The phrase bank is left untouched, existing note cells are never overwritten, and it is one undo step. Handles Keymap and Program triggering, Key Tracking and LPB scaling.",
    "tags": [
     "lua",
     "xrnx",
-    "tools"
+    "phrases",
+    "workflow"
    ],
-   "facts": [],
+   "facts": [
+    {
+     "type": "tree_count",
+     "ext": ".lua",
+     "label": "lua sources"
+    }
+   ],
    "links": {
-    "repo": "https://github.com/mene311/renoise-tools"
+    "tool": "https://github.com/mene311/renoise-phrasetopattern",
+    "zip": "https://github.com/mene311/renoise-phrasetopattern/archive/refs/heads/master.zip",
+    "repo": "https://github.com/mene311/renoise-phrasetopattern"
+   }
+  },
+  "renoise-ytsampler": {
+   "name": "YT Sampler",
+   "blurb": "Paste a YouTube URL and an optional time range, and the audio lands in the Sample Editor. The tool hands the download to a detached script and polls it, so a two-hour job leaves Renoise fully playable.",
+   "tags": [
+    "lua",
+    "xrnx",
+    "sampling",
+    "yt-dlp"
+   ],
+   "facts": [
+    {
+     "type": "tree_count",
+     "ext": ".lua",
+     "label": "lua sources"
+    }
+   ],
+   "links": {
+    "tool": "https://github.com/mene311/renoise-ytsampler",
+    "zip": "https://github.com/mene311/renoise-ytsampler/archive/refs/heads/master.zip",
+    "repo": "https://github.com/mene311/renoise-ytsampler"
+   }
+  },
+  "renoise-chat": {
+   "name": "Renoise Chat",
+   "blurb": "A chat box inside Renoise that carries out what you describe on the live song, through the scripting API. The tool is one half of a pair and needs a local daemon running before it can answer, which the README states plainly. Version 0.10.",
+   "tags": [
+    "lua",
+    "xrnx",
+    "llm",
+    "0.10"
+   ],
+   "facts": [
+    {
+     "type": "tree_count",
+     "ext": ".lua",
+     "label": "lua sources"
+    }
+   ],
+   "links": {
+    "tool": "https://github.com/mene311/renoise-chat",
+    "zip": "https://github.com/mene311/renoise-chat/archive/refs/heads/master.zip",
+    "repo": "https://github.com/mene311/renoise-chat"
    }
   }
  },
