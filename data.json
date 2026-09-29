@@ -43,6 +43,14 @@
    "items": [
     "renoise-community-archive"
    ]
+  },
+  {
+   "id": "non-renoise",
+   "title": "Non-Renoise",
+   "blurb": "Things I build that have nothing to do with the tracker. Same approach: let the metadata do the work, keep the files useful in bulk.",
+   "items": [
+    "fm1-banks"
+   ]
   }
  ],
  "repos": {
@@ -300,6 +308,29 @@
     "tool": "https://github.com/mene311/renoise-chat",
     "zip": "https://github.com/mene311/renoise-chat/releases/latest",
     "repo": "https://github.com/mene311/renoise-chat"
+   }
+  },
+  "fm1-banks": {
+   "name": "FM-1 themed DX7 banks",
+   "external": true,
+   "blurb": "26 thematic 32-voice DX7 banks for the M-VAVE FM-1, 832 patches total: synthwave bass and pads, acid, drums, guitars, choir, church organ and the rest. Voices are scored by name against per-theme categories and spread with quotas, so a bank reads as a bank instead of 32 near-duplicates. Repackaging M-VAVE's checksum convention was the whole trick: header excluded, names scrubbed of control bytes.",
+   "tags": [
+    "dx7",
+    "sysEx",
+    "fm1",
+    "banks",
+    "python"
+   ],
+   "static": [
+    "26 banks",
+    "832 patches",
+    "32 voices each"
+   ],
+   "facts": [],
+   "links": {
+    "site": "https://mene311.github.io/fm1-banks/",
+    "zip": "https://github.com/mene311/fm1-banks/archive/refs/heads/master.zip",
+    "repo": "https://github.com/mene311/fm1-banks"
    }
   }
  },
